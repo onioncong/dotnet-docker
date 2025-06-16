@@ -60,7 +60,7 @@ app.MapGet("/Delay/{value}", async (int value) =>
     return new Operation(value);
 });
 
-app.Run();
+app.Run("http://+:80");
 
 [JsonSerializable(typeof(EnvironmentInfo))]
 [JsonSerializable(typeof(Operation))]
